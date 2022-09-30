@@ -1,0 +1,409 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap');
+
+
+@layer base{
+
+  /* ----------Not found ------------*/
+
+  .not-found{
+    @apply text-amber-400;
+    font-family: 'Qwitcher Grypen';
+  }
+
+  /* ------  Header -- */
+
+  .header-container{
+    @apply w-full flex flex-col bg-slate-900 fixed top-0;
+  }
+
+  .logo {
+    @apply m-auto;
+  }
+
+  .header-button{
+    @apply flex items-center space-x-8 m-auto mb-5;
+  }
+
+  .register-button{
+    @apply bg-emerald-500 font-bold w-36 h-12 rounded-full shadow-lg shadow-emerald-500/20 hover:shadow-emerald-400/50 duration-75;
+  }
+
+  .login-button{
+    @apply text-amber-400 hover:text-amber-500
+  }
+
+  /* --------------------- Nav -------------------  */
+
+  .nav-bar-icon{
+    @apply flex justify-around h-full w-full p-5
+  }
+
+  .icon-header{
+    @apply text-xl hidden
+  }
+
+  .icon-footer{
+    @apply text-xl
+  }
+
+  .li-icon-list{
+    @apply relative m-auto
+  }
+
+  .li-icon-notif{
+    @apply relative text-center
+  }
+
+  .li-notif-list, .li-band-list {
+    @apply absolute flex flex-col gap-5 min-w-[100px] bottom-52 left-1/2 shadow-lg shadow-slate-900/50 overflow-hidden hover:overflow-y-auto transform -translate-x-1/2 translate-y-1/2 bg-slate-900 p-4 h-80 duration-100 rounded-t-lg;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+ 
+  /* ----- Footer ----- */
+
+  .clear{
+    @apply h-32 w-screen
+  }
+  .footer{
+    @apply bg-slate-900 w-screen m-auto items-center justify-center fixed bottom-0 h-28 p-2
+  }
+
+  /* --------- Legals --------- */
+
+.legal-cgu-container{
+  @apply flex flex-col justify-around w-full h-full
+}
+
+.legal{
+ @apply px-8 pb-8 rounded-md mb-4 shadow-xl mt-5 p-1 w-full
+}
+
+.title{
+    @apply text-amber-400 text-2xl font-semibold text-amber-500 text-center p-5
+}
+
+.subtitle{
+  @apply text-left text-center font-semibold mt-2 text-amber-500 p-3
+}
+
+.text{
+  @apply text-left text-amber-400 text-base
+}
+
+.cgu{
+  @apply px-8 pb-8 rounded-md mb-4 shadow-xl mt-5 w-full
+}
+  
+  /* ------- Search --- */
+  
+  .big-button{
+    @apply bg-rose-400 p-3 rounded-md text-slate-800 font-bold hover:bg-amber-400;
+  }
+
+  .search-bar{
+    @apply placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 text-slate-800;
+  }
+
+  .search-bar-box{
+    @apply w-full m-auto;
+  }
+
+  .search-bar{
+    @apply mt-5;
+  }
+
+  .search-text{
+    @apply text-amber-400 opacity-40 m-4 text-center text-lg
+  }
+   
+  .search-button{
+    @apply bg-slate-900 p-3 rounded-md shadow-lg shadow-slate-900/10 hover:shadow-lg hover:shadow-slate-900/50 duration-75
+  }
+
+  .card-list-container{
+    @apply w-screen p-5;
+  }
+
+  .card-container{
+    @apply w-11/12 h-[130px] p-1 mt-5 flex shadow-lg shadow-slate-900/50 flex-row m-auto rounded-md justify-between bg-slate-900 text-sm hover:scale-95 duration-100;
+  }
+
+  .card-image-user{
+    @apply w-16 h-16 rounded-full m-auto mb-2 border border-4 border-amber-400 object-cover object-top
+  }
+
+  .card-image-band{
+    @apply w-16 h-16 rounded-full m-auto mb-2 border border-4 border-emerald-500 object-cover object-top
+  }
+
+  .card-sub{
+    @apply text-slate-500 text-xs text-center;
+  }
+
+  .card-sub-info{
+    @apply w-1/2 text-center grid grid-cols-1 gap-4 p-1
+  }
+
+  .card-profil-info{
+    @apply w-1/2
+  }
+
+  /* -------------- Profile creation -------------- */
+
+  .add-profil-image{
+    @apply block text-emerald-300 p-5 m-auto rounded-md shadow-lg
+
+  }
+
+  /* ----- User profile ----- */
+
+  /* Buttons */
+
+  .profil-container{
+    @apply w-screen p-5 text-center text-amber-400
+  }
+
+  .logout-button{
+    @apply w-1 h-1 absolute top-14 right-8
+  }
+
+  .friend-button{
+    @apply border-2 border-amber-400 text-amber-400 font-bold flex items-center justify-center rounded-full hover:bg-amber-200 shadow-lg hover:shadow-amber-200/50 hover:text-amber-900 duration-100;
+    @apply absolute top-28 right-2 w-20 h-20
+  }
+
+  .logout-button-icon{
+    @apply w-10 h-10 rounded-full border border-slate-400 text-slate-300
+  }
+
+  /*------- */
+
+  .add-to-band-container{
+    @apply absolute top-28 left-2 w-[150px] text-emerald-300
+  }
+
+  .add-to-band-button{
+    @apply border border-2 border-emerald-300 p-3 rounded-full hover:bg-emerald-900 shadow-lg shadow-slate-900/50 relative 
+  }
+
+  .add-to-band-list{
+    @apply absolute w-[100px] space-y-4 top-[80px] left-[25px] p-4 h-80 border-2 border-emerald-300 shadow-lg shadow-slate-900/50 bg-slate-800 rounded-md;
+  }
+
+  .profil-image{
+    @apply rounded-full w-40 h-40 object-cover object-top m-auto border-4 border-amber-500
+  }
+  .band-create-button-container{
+    @apply w-16 h-16 rounded-full
+  }
+  .band-create-button{
+    @apply  h-16 w-16 rounded-full object-cover object-top border border-4 border-emerald-500 p-3 font-bold text-emerald-300 text-3xl shadow-lg hover:shadow-emerald-500/20 hover:bg-emerald-300 hover:text-emerald-900 duration-150
+  }
+
+  .profil-username{
+    @apply text-3xl pt-2
+  }
+  .profil-info{
+    @apply m-5
+  }
+  .profil-description{
+    @apply text-amber-200
+  }
+
+  .relation-list{
+    @apply w-11/12 grid grid-cols-3 gap-2 m-auto place-content-center
+  }
+
+  .profil-relation-image{
+    @apply w-16 h-16 rounded-full m-auto object-cover object-top
+  }
+
+  /* ----- */
+
+  @screen big-phone {
+
+    .header-button{
+      @apply flex items-center space-x-8 mr-5;
+    }
+  
+    .search-bar{
+      @apply mt-5 w-80 m-auto;
+    }
+
+    .card-list-container{
+      @apply grid grid-cols-2 gap-3
+    }
+
+    .card-container{
+      @apply w-full h-80 flex flex-col justify-around
+    }
+
+    .card-profil-info{
+     @apply w-full
+    }
+
+    .card-sub-info{
+      @apply w-full text-center grid grid-cols-1 gap-4 p-1
+    }
+
+    .friend-container{
+      @apply w-96 m-auto
+    }
+
+    .band-container{
+      @apply w-96 m-auto
+    }
+  
+  @screen tablet{
+
+    .add-to-band-container{
+      @apply left-16
+    }
+
+    .icon-header{
+      @apply w-3/5 relative
+    }
+
+    .nav-bar-icon{
+      @apply grid grid-cols-5 items-center absolute;
+
+      width: 120%;
+      right: 10px
+    }
+
+    .li-band-list{
+      @apply absolute -top-[106px] space-y-4 left-1/2 p-4 h-80 border-b-2 border-l-2 border-r-2 border-emerald-200 shadow-lg shadow-emerald-500/50 rounded-b-full  rounded-t-none;
+    }
+
+    .li-notif-list{
+      @apply absolute -top-[106px] space-y-4 left-1/2 p-4 h-80 border-b-2 border-l-2 border-r-2 border-amber-200 shadow-lg shadow-amber-500/50 rounded-b-full  rounded-t-none;
+    }
+    .li-icon{
+      @apply m-auto
+    }
+
+    .li-icon-band{
+      @apply text-center relative
+    }
+
+    .icon{
+      @apply text-xl
+    }
+  
+    .logo {
+      @apply ml-3;
+    }
+    .card-container{
+      @apply w-4/5 h-80
+    }
+
+    .icon-header{
+      @apply block w-2/3 p-2
+    }
+    .icon-footer{
+      @apply hidden
+    }
+    .clear{
+      @apply h-16
+    }
+    .footer{
+      @apply h-16
+    }
+
+    .friend-button{
+      @apply right-16
+    }
+  }
+  
+  @screen laptop {
+    .legal, .cgu{
+      @apply w-2/4 m-auto
+    }
+
+    {
+      @apply w-2/4 m-auto
+     }
+    .profil-header{
+      @apply w-full flex flex-row rounded-lg justify-between mt-10 ;
+    }
+    .card-list-container{
+      @apply grid grid-cols-3 gap-2
+    }
+    .card-container{
+      @apply w-80
+    }
+    .profil-container{
+      @apply w-screen p-10
+    }
+
+    .profil-image{
+      @apply rounded-full w-60 h-60 object-cover object-top m-auto
+    }
+
+    .profil-header-left{
+      @apply w-2/6 p-3
+    }
+
+    .profil-header-center{
+      @apply w-2/6 pt-12
+    }
+    .profil-header-right{
+      @apply w-2/6 flex flex-col justify-around p-9
+    }
+
+    .profil-relation-container{
+      @apply grid grid-cols-2 w-full m-auto pt-5
+    }
+
+    .relation-list{
+      @apply grid grid-cols-4
+    }
+  }
+
+  @screen desktop {
+    .profil-container{
+      @apply w-9/12 m-auto
+    }
+    .profil-header{
+      @apply h-96 p-5 mt-2;
+      box-shadow: 0px 0px 50px #0f172a;
+    }
+    .card-list-container{
+      @apply grid grid-cols-4 gap-2
+    }
+
+    .card-container{
+      @apply w-80
+    }
+    .relation-list{
+      @apply grid grid-cols-5
+    }
+  }
+
+  @screen big-desktop {
+    .card-list-container{
+      @apply grid grid-cols-5 gap-2
+    }
+  }
+}
+}
+
+body {
+  margin: 0;
+  font-family: Comfortaa, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: Comfortaa, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
